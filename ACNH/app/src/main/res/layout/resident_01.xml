@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:layout_marginTop="15dp">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/r1_civ"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/r1_tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="낭랑냥냥"
+            android:background="@drawable/item_title"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recyresi_gender"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/r1_tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남자"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recyresi_personality"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/r1_tvPersonality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="차분함"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recyresi_birth"
+                android:background="@drawable/item_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:fontFamily="@font/cookierun_regular"/>
+
+            <TextView
+                android:id="@+id/r1_tvBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6/11 (쌍둥이 자리)"
+                android:textSize="12dp"
+                android:fontFamily="@font/cookierun_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recyresi_coffee"
+                android:background="@drawable/item_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:fontFamily="@font/cookierun_regular"/>
+
+            <TextView
+                android:id="@+id/r1_tvCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모카 / 우유 조금 / 설탕 1"
+                android:textSize="12dp"
+                android:fontFamily="@font/cookierun_regular"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

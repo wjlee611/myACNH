@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling"
+    android:background="#FEF4DD"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:id="@+id/llIslandInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_background"
+            android:padding="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_islandinfo_maintitle"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/card_title"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:id="@+id/btnInfoScreen"
+                    android:text="@string/main_islandinfo_btn"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="right|center_vertical"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_islandinfo_nametitle"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/isN"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_nh"
+                    android:text="N"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/isS"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_sh"
+                    android:text="S"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/tvMIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/main_islandinfo_namehint"
+                    android:textSize="13dp"
+                    android:textColor="#222"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>  <!-- tvMIN -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_islandinfo_addresstitle"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/tvMIA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/main_islandinfo_addresshint"
+                    android:textSize="13dp"
+                    android:textColor="#222"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>  <!-- tvMIA -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_islandinfo_fruittitle"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/tvMIF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/main_islandinfo_fruithint"
+                    android:textSize="13dp"
+                    android:textColor="#222"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>  <!-- tvMIF -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_islandinfo_resititle"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/tvMIR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/main_islandinfo_resihint"
+                    android:textSize="13dp"
+                    android:textColor="#222"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>  <!-- tvMIR -->
+        </LinearLayout>  <!-- llIslandInfo -->
+
+        <LinearLayout
+            android:id="@+id/llIslandResident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_background"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_islandresident_title"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/card_title"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cookierun_regular"/>
+
+            <TextView
+                android:id="@+id/tvTmpResident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_islandresident_hint"
+                android:paddingLeft="10dp"
+                android:textColor="#aaa"
+                android:visibility="visible"
+                android:layout_marginTop="20dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/cookierun_regular"/>  <!-- tvTmpResident -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMainResi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="10dp"
+                android:overScrollMode="never"/>
+        </LinearLayout>  <!-- llIslandResident -->
+
+        <LinearLayout
+            android:id="@+id/llCurMonthCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_background"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvCurMonthCalender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N월 메인 이벤트"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/card_title"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:id="@+id/btnmoreevent"
+                    android:text="@string/main_elseevent_btn"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="right|center_vertical"
+                    android:fontFamily="@font/cookierun_regular"/> -->
+            </LinearLayout>  <!-- tvCurMonthCalender -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cal_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:overScrollMode="never"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="start"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/main_islandevent_update"
+                android:textSize="13dp"
+                android:fontFamily="@font/cookierun_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="start"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/main_islandevent_standard"
+                android:textSize="13dp"
+                android:fontFamily="@font/cookierun_regular"/>
+
+        </LinearLayout>  <!-- llCurMonthCalender -->
+
+
+        <LinearLayout
+            android:id="@+id/llcollection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_background"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collection Progress"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/card_title"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cookierun_regular"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/llEditCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Bugs"
+                        android:gravity="center"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="80"
+                        android:progress="40"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_bugs"
+                        android:layout_marginTop="1dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="40 / 80"
+                        android:gravity="center"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fish"
+                        android:gravity="center"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="80"
+                        android:progress="20"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_fish"
+                        android:layout_marginTop="1dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="20 / 80"
+                        android:gravity="center"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fossils"
+                        android:gravity="center"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="73"
+                        android:progress="70"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_fossils"
+                        android:layout_marginTop="1dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="70 / 73"
+                        android:gravity="center"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="start"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:text="Click the progressbar to edit"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cookierun_regular"/>
+
+        </LinearLayout>  <!-- llcollection -->
+
+
+        <LinearLayout
+            android:id="@+id/llturnip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_background"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_turniphelper_title"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/card_title"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:id="@+id/btnturnip"
+                    android:text="@string/main_turniphelper_btn1"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="right|center_vertical"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>  <!-- tvturnip -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turnip_sun"
+                    android:background="@drawable/item_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <TextView
+                    android:id="@+id/tvturSUN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/click_to_input"
+                    android:textSize="13dp"
+                    android:textColor="#222"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:layout_marginRight="100dp"/>
+            </LinearLayout>  <!-- SUN -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_mon_am"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturMONam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- AM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_mon_pm"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturMONpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- PM -->
+            </LinearLayout>  <!-- MON -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_tue_am"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturTUEam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- AM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_tue_pm"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturTUEpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- PM -->
+            </LinearLayout>  <!-- TUE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_wed_am"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturWEDam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- AM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_wed_pm"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturWEDpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- PM -->
+            </LinearLayout>  <!-- WED -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_thu_am"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturTHUam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- AM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_thu_pm"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturTHUpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- PM -->
+            </LinearLayout>  <!-- THU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_fri_am"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturFRIam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- AM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_fri_pm"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturFRIpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- PM -->
+            </LinearLayout>  <!-- FRI -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_sat_am"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturSATam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- AM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turnip_sat_pm"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvturSATpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_input"
+                        android:textSize="13dp"
+                        android:textColor="#222"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>  <!-- PM -->
+            </LinearLayout>  <!-- SAT -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnturnipDEL"
+                    android:text="@string/main_turniphelper_btn2"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnturnipSAVE"
+                    android:text="@string/main_turniphelper_btn3"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>  <!-- SAT -->
+
+        </LinearLayout>  <!-- llturnip -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

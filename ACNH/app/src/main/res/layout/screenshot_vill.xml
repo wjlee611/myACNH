@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="946dp"
+        android:layout_height="500dp"
+        android:background="@drawable/sh_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/sh_title" />
+
+
+            <FrameLayout
+                android:layout_width="272dp"
+                android:layout_height="204dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/sh_image"
+                    android:layout_width="240dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/sh_isN"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle_nh"
+                    android:gravity="center"
+                    android:text="N"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sh_isS"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle_sh"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/tape" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/tape" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sh_vill_title_bg"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Island Name"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/sh_tv_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sh_vill_contnets_bg"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="3dp"
+                    android:text="YOUR ISLAND NAME"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sh_vill_title_bg"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Island Address"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/sh_tv_address"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/sh_vill_contnets_bg"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="3dp"
+                    android:text="YOUR ISLAND ADDRESS"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sh_vill_title_bg"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Island Fruit"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/sh_tv_fruit"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sh_vill_contnets_bg"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="3dp"
+                    android:text="YOUR ISLAND FRUIT"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_title"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Residents"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/sh_tv_resident"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/name_title"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Residents"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cookierun_regular"
+                    android:text="and..."
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sh_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/sh_rv_background"
+                android:clickable="false"
+                android:longClickable="false"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

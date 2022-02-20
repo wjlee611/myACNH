@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/donate_title"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/donate_text1"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/donate_text2"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <View
+            android:background="#66bdbdbd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnDonate"
+                android:text="@string/donate_1000_btn"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:fontFamily="@font/cookierun_regular"/>
+        </LinearLayout>
+        <View
+            android:background="#66bdbdbd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/donate_taxinfo"
+            android:textColor="#CB4245"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDonateClose"
+            android:text="@string/btn_back"
+            android:textSize="15dp"
+            android:textColor="#CB4245"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#bef">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turnip_analysis_title"
+        android:background="@drawable/card_title"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/cookierun_regular"
+        android:layout_margin="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp"/>
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:text="@string/turnip_analysis_text1"
+        android:layout_marginBottom="10dp"
+        android:textColor="#f77"
+        android:fontFamily="@font/cookierun_regular"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="#777"/>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_type"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_sun"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_mon_am"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_mon_pm"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_tue_am"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_tue_pm"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_wed_am"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_wed_pm"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_thu_am"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_thu_pm"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_fri_am"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_fri_pm"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_sat_am"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#4ee"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_sat_pm"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#aee"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="#777"/>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="@string/turnip_analysis_input"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisSUN"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/analysisMONAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisMONPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/analysisTUEAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisTUEPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/analysisWEDAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisWEDPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/analysisTHUAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisTHUPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/analysisFRIAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisFRIPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/analysisSATAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/analysisSATPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="4dp"
+        android:background="#777"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/analysisRecyclerView"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"/>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

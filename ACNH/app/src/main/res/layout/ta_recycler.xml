@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ta_rc_form"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="[입력값]"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_Sun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/ta_rc_MonAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_MonPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/ta_rc_TueAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_TuePM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/ta_rc_WedAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_WedPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/ta_rc_ThuAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_ThuPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/ta_rc_FriAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_FriPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+
+        <TextView
+            android:id="@+id/ta_rc_SatAM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#ee7"/>
+
+        <TextView
+            android:id="@+id/ta_rc_SatPM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_weight="1"
+            android:fontFamily="@font/cookierun_regular"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:background="#eec"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="#777"/>
+
+</LinearLayout>

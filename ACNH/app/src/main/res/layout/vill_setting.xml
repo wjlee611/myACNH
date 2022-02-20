@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/islandedit_title"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:fontFamily="@font/cookierun_regular" />
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+    <ScrollView
+        android:id="@+id/setting_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_title"
+                    android:text="@string/islandedit_islandinfo_title"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_islandinfo_nametitle"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <EditText
+                        android:id="@+id/etMIN"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/islandedit_islandinfo_hint"
+                        android:singleLine="true"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_islandinfo_addresstitle"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <EditText
+                        android:id="@+id/etMIA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/islandedit_islandaddress_hint"
+                        android:singleLine="true"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_islandinfo_fruittitle"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <EditText
+                        android:id="@+id/etMIF"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/islandedit_islandfruit_hint"
+                        android:singleLine="true"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_islandinfo_resititle"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <EditText
+                        android:id="@+id/etMIR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/islandedit_islandresi_hint"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/n_hemisphere"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <Switch
+                        android:id="@+id/swHemisphere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:track="@drawable/switch_track"
+                        android:thumb="@drawable/switch_thumb"
+                        android:textColor="#000000"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/s_hemisphere"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+            </LinearLayout>  <!-- 섬 정보 수정 -->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_title"
+                    android:text="@string/islandedit_resident_title"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/islandedit_resident_selected"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/numCelResident"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_title"
+                        android:text="00/10"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/islandedit_resident_text2"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvChouResi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ddd"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/islandedit_resident_list"
+                        android:background="@drawable/item_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+
+                    <TextView
+                        android:id="@+id/numTotResident"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_title"
+                        android:text="00 / 000명 찾음"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginRight="20dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/cookierun_regular"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/islandedit_resident_text1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/cookierun_regular"/>
+
+                <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/rvNestedScrollView"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvResiData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal" />
+                    </androidx.core.widget.NestedScrollView>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#ddd"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rdo_group1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rdo_alligator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alligator"
+                            android:fontFamily="@font/cookierun_regular" />
+
+                        <RadioButton
+                            android:id="@+id/rdo_anteater"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anteater"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_bear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bear"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_bird"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bird"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_cat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cat"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_chicken"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chicken"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_cow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cow"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_cub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cub"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_deer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deer"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_dog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dog"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_duck"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/duck"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_eagle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/eagle"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_elephant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/elephant"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_frog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/frog"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_goat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/goat"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_gorilla"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gorilla"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_hamster"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hamster"
+                            android:fontFamily="@font/cookierun_regular"/>
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rdo_group2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rdo_hippo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hippo"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_horse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/horse"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_kangaroo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kangaroo"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_Koala"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/koala"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_lion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lion"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_monkey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/monkey"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_mouse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mouse"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_octopus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/octopus"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_ostrich"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ostrich"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_penguin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penguin"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_pig"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pig"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_rabbit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rabbit"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_rhino"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rhino"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_sheep"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sheep"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_squirrel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/squirrel"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_tiger"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tiger"
+                            android:fontFamily="@font/cookierun_regular"/>
+
+                        <RadioButton
+                            android:id="@+id/rdo_wolf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wolf"
+                            android:fontFamily="@font/cookierun_regular"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>  <!-- 거주 중인 주민 정보 수정 -->
+
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDlgCancel"
+            android:text="@string/btn_cancel"
+            android:textSize="15dp"
+            android:textColor="#CB4245"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <Button
+            android:id="@+id/btnDlgOK"
+            android:text="@string/btn_ok"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

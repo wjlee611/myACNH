@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/app_info_popup_bg">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="@string/turnip_popup_title"
+        android:background="@drawable/turnip_popup_title"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:fontFamily="@font/cookierun_regular"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtTurnipValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:hint="hint"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/cookierun_regular"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/turnipLengthWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turnip_popup_3char"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="#f66"
+        android:fontFamily="@font/cookierun_regular"
+        android:textSize="13dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnTurnipCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/btn_cancel"
+            android:background="@drawable/card_title"
+            android:textColor="#fff"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <Button
+            android:id="@+id/btnTurnipOk"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/btn_ok"
+            android:background="@drawable/card_title"
+            android:textColor="#fff"
+            android:fontFamily="@font/cookierun_regular"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

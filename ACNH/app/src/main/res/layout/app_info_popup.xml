@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_info_popup_bg"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_title"
+        android:background="@drawable/card_title"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/cookierun_regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_htu"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/card_title"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/cookierun_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:background="@android:drawable/ic_menu_edit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_htu_1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:background="@android:drawable/ic_menu_edit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_htu_2"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_menu_dot"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_htu_3"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_htu_end"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:fontFamily="@font/cookierun_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_creator_title"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/card_title"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="낭랑냥냥 NLNN"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_appver_title"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/card_title"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v.1.14"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_creinv_title"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/card_title"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Studio 3.6.1"
+            android:textSize="13dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_testmac_title"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/card_title"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="top"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung Galaxy Note 9\nSamsung Galaxy Tab S6"
+            android:textSize="13dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/cookierun_regular"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_updates_history"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/card_title"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/cookierun_regular"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/info_updates"
+                    android:textColor="#000"
+                    android:fontFamily="@font/cookierun_regular"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
