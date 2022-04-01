@@ -1,4 +1,5 @@
 package com.gmail.com.wjlee611.acnh;
+package com.gmail.com.wjlee611.acnh.privateToken;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,6 +19,7 @@ public class DonateActivity extends Activity implements BillingProcessor.IBillin
 
     private BillingProcessor bp;
     private AppStorage _storage;
+    private com.gmail.com.wjlee611.acnh.privateToken.GoogleBillingToken GoogleBillingToken = new com.gmail.com.wjlee611.acnh.privateToken.GoogleBillingToken()
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class DonateActivity extends Activity implements BillingProcessor.IBillin
 
         final AppStorage storage = new AppStorage(this);
         _storage = storage;
-        bp = new BillingProcessor(this, "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqIqSgxsNlnnl6f0kmmyyjZg0/2RMdrsi+sL5s7kDxqFLzp4kIxrHXgPvPurqBYTp8xH+ZZLm0ilTxhDI+sTee6qX//PD2wDoWu+wD6EvLpnIovt3yx/ZXHr1e6p29kQjzBai6XengyyiyX4GfBFy4XESaGOZOl5kwwb9rJcUCui803tYBOppR+r8/GBAAa6/1YJT/VCfSmL1qFSAvBxfM/fOhycHTovBUgTtH201E9+OnHBDFfQZy9Zw0jiTuboPDmkL15gCqU2tzqGUyrxab1GOrguwRmwA4H/WS8MYVkKFUygZjv7VgbtsGtMwu8vB8X/PpyWEC8zsQA0mSwniiQIDAQAB", this);
+        bp = new BillingProcessor(this, GoogleBillingToken.myToken, this);
         bp.initialize();
 
 
