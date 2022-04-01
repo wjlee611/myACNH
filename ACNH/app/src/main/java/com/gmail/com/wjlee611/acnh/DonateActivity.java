@@ -19,7 +19,7 @@ public class DonateActivity extends Activity implements BillingProcessor.IBillin
 
     private BillingProcessor bp;
     private AppStorage _storage;
-    private com.gmail.com.wjlee611.acnh.privateToken.GoogleBillingToken GoogleBillingToken = new com.gmail.com.wjlee611.acnh.privateToken.GoogleBillingToken()
+    private com.gmail.com.wjlee611.acnh.privateToken.GoogleBillingToken GoogleBillingToken = new com.gmail.com.wjlee611.acnh.privateToken.GoogleBillingToken();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
